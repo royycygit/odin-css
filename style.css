@@ -1,6 +1,6 @@
 .info img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 
 .heroright img {
@@ -10,15 +10,19 @@
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .header,
 .footer {
+    /* max-width: 900px; */
     display: flex;
     background-color: #1f2937;
     color: white;
-    /* max-width: 1000px; */
     align-items: center;
+    height: 50px;
+    width: 1000px;
+    padding: 0 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -48,19 +52,73 @@ a {
     display: flex;
     background-color: #1f2937;
     color: white;
+    height: 350px;
+    width: 1000px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroleft {
+    flex: 1;
+    padding: 30px;
+}
+
+.heroright {
+    flex: 1;
+    padding: 30px;
 }
 
 .title {
     background-color: white;
+    font-size: 36px;
+    font-weight: 700;
+    padding: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .container {
     display: flex;
     background-color: white;
+    justify-content: center;
+    gap: 30px;
+    height: 300px;
+}
+
+.info {
+    width: 150px;
 }
 
 .quote {
     display: flex;
+    flex-direction: column;
     background-color: #e5e7eb;
+    width: 1000px;
+    align-items: center;
 }
 
+.quotetext {
+    font-size: 36px;
+    font-style: italic;
+    padding: 80px 150px 0 150px;
+}
+
+.quotesign {
+    font-weight: bold;
+    align-self: flex-end;
+    padding: 0 150px 80px 0;
+}
+
+.adv {
+    background-color: #3882f6;
+    margin: 50px;
+}
+
+.advheader {
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.advtext {
+    color: white;
+}
