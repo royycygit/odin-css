@@ -13,6 +13,14 @@ body {
     align-items: center;
 }
 
+button {
+    color: white;
+    background-color: #3882f6;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
 .header,
 .footer {
     /* max-width: 900px; */
@@ -24,6 +32,10 @@ body {
     width: 1000px;
     padding: 0 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer {
+    justify-content: center;
 }
 
 .header-logo {
@@ -109,16 +121,20 @@ a {
 }
 
 .adv {
+    display: flex;
+    justify-content: space-between;
     background-color: #3882f6;
     margin: 50px;
 }
 
-.advheader {
-    color: white;
-    font-weight: bold;
-    padding: 20px;
-}
-
 .advtext {
     color: white;
+    padding: 20px;
+    margin: 30px;
+}
+
+.adv button {
+    border: 2px solid white;
+    /* padding: 5px 20px; */
+    margin: 30px;
 }
